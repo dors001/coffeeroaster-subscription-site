@@ -3,6 +3,7 @@ import Image from "next/image";
 import MenuDesktop from "./components/menuDesktop";
 import MenuMobile from "./components/menuMobile";
 import { useState } from "react";
+import HamburgerIconLogic from "./components/hamburgerIconLogic";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,18 +11,21 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex justify-between my-10 mx-6 md:mx-10">
-        <div>
-          <Image
-            alt="Logo"
-            src="/Assets/shared/desktop/logo.svg"
-            width={235}
-            height={25}
-            layout="responsive"
-          />
+      <div className="relative" role="navigation">
+        <div className="flex justify-between my-10 mx-6 md:mx-10">
+          <div>
+            <Image
+              alt="Logo"
+              src="/Assets/shared/desktop/logo.svg"
+              width={235}
+              height={25}
+              layout="responsive"
+            />
+          </div>
+          <MenuDesktop />
+          <HamburgerIconLogic isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
         </div>
-        <MenuDesktop />
-        <MenuMobile isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+        <MenuMobile isMenuOpen={isMenuOpen} />
       </div>
     </>
   );
