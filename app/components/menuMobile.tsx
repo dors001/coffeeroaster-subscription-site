@@ -12,7 +12,7 @@ const NavbarMobile = ({ isMenuOpen, toggleMenu }: Props) => {
       <div className="md:hidden">
         <button
           onClick={toggleMenu}
-          className="align-middle"
+          className="align-middle mt-2"
           aria-expanded={isMenuOpen}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
@@ -33,7 +33,7 @@ const NavbarMobile = ({ isMenuOpen, toggleMenu }: Props) => {
           )}
         </button>
         {isMenuOpen && (
-          <ul className="flex flex-col">
+          <ul className="flex flex-col menu-bg">
             <li>
               <Link href="/" className="text-slate-500">
                 Home

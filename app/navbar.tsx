@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex justify-between my-10 mx-4">
+      <div className="flex justify-between my-10 mx-6 md:mx-10">
         <div>
           <Image
             alt="Logo"
