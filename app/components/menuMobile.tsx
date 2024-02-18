@@ -9,12 +9,12 @@ const NavbarMobile = ({ isMenuOpen }: Props) => {
     <>
       {isMenuOpen && (
         <ul
-          className="flex flex-col menu-bg absolute w-screen text-center gap-5 text-xl p-10"
+          className="flex flex-col absolute w-screen text-center gap-5 text-xl p-10 mobile-menu-bg"
           aria-expanded={isMenuOpen}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
           <li>
-            <Link href="/" className="text-primary heading text-2xl">
+            <Link href="/home" className="text-primary heading text-2xl">
               Home
             </Link>
           </li>

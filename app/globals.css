@@ -14,7 +14,34 @@
 
 body {
   font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
   color: rgb(var(--color-primary));
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 72px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.navigation {
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .heading {
@@ -25,12 +52,91 @@ body {
   color: var(--color-primary);
 }
 
+.color-text {
+  color: var(--color-text);
+}
+
+.title-font {
+  font-size: 150px;
+  line-height: 72px;
+}
+
 .mobile-menu-bg {
+  height: 500px;
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(254,252,247,0.6006) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(254,252,247,0.6006) 100%);
 }
 
 .desktop-menu-text {
-  font-size: 12px;
   font-weight: bold;
+  color: var(--color-secondary);
+}
+
+.hero-container {
+  margin: 1.5rem;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.hero-background-image {
+  background-image: url("/assets/home/mobile/image-hero-coffeepress.jpg");
+  background-size: cover;
+}
+
+.hero-container-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-description {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.btn-primary {
+  color: var(--color-text);
+  background-color: var(--color-accent);
+  width: 220px;
+  height: 55px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container-body {
+    margin-left: 58px;
+    padding: 0;
+    width: 400px;
+    text-align: left;
+  }
+
+  .hero-title {
+    width: 330px;
+  }
+
+  .hero-background-image {
+    background-image: url("/assets/home/tablet/image-hero-coffeepress.jpg");
+    background-size: cover;
+  }
+
+  .btn-primary {
+    align-self: start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-container-body {
+    gap: 36px;
+  }
+
+  .hero-title {
+    width: 40vw;
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .hero-background-image {
+    background-image: url("/assets/home/desktop/image-hero-coffeepress.jpg");
+    background-size: cover;
+  }
 }

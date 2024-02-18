@@ -16,7 +16,7 @@ const Navbar = () => {
           <div>
             <Image
               alt="Logo"
-              src="/Assets/shared/desktop/logo.svg"
+              src="/assets/shared/desktop/logo.svg"
               width={235}
               height={25}
               layout="responsive"

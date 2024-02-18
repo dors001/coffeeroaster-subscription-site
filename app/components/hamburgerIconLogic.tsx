@@ -17,16 +17,17 @@ const HamburgerIconLogic = ({ isMenuOpen, toggleMenu }: Props) => {
         >
           {isMenuOpen ? (
             <Image
-              src="/Assets/shared/mobile/icon-close.svg"
+              src="/assets/shared/mobile/icon-close.svg"
               alt="Close menu"
+              className="mobile-menu"
               width={18}
               height={18}
             />
           ) : (
             <Image
-              src="/Assets/shared/mobile/icon-hamburger.svg"
+              src="/assets/shared/mobile/icon-hamburger.svg"
               alt="Open menu"
-              className="close-icon"
+              className="mobile-menu"
               width={18}
               height={18}
             />

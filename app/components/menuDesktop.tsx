@@ -4,7 +4,7 @@ import React from "react";
 const NavbarDesktop = () => {
   return (
     <>
-      <ul className="hidden md:flex space-x-4 mt-1">
+      <ul className="hidden md:flex space-x-4 mt-1 navigation">
         <li>
           <Link href="/" className="text-primary desktop-menu-text">
             Home
