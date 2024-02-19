@@ -6,7 +6,7 @@ const NavbarDesktop = () => {
     <>
       <ul className="hidden md:flex space-x-4 mt-1 navigation">
         <li>
-          <Link href="/" className="text-primary desktop-menu-text">
+          <Link href="/home" className="text-primary desktop-menu-text">
             Home
           </Link>
         </li>
