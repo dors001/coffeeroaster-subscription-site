@@ -1,10 +1,12 @@
 import React from "react";
 import Hero from "./home/components/Hero";
 import Product from "./home/components/Product";
-import productData from "../app/database.json";
+import data from "../app/database.json";
+import CardContainer from "./home/components/cardContainer";
 
 const HomePage = () => {
-  const { products } = productData;
+  const products = data.products;
+  const chooseUsData = data.choose_us;
 
   return (
     <>
@@ -21,6 +23,28 @@ const HomePage = () => {
               productImageUrl={value.imageUrl}
               productTitle={value.title}
               productDescription={value.description}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="choose-us-section gap-16 relative">
+        <div className="choose-us-body-text-container">
+          <h3 className="heading mt-16 mb-6">Why choose us?</h3>
+          <p className="body-text">
+            A large part of our role is choosing which particular coffees will
+            be featured in our range. This means working closely with the best
+            coffee growers to give you a more impactful experience on every
+            level.
+          </p>
+        </div>
+        <div className="cards-container flex flex-col gap-6">
+          {Object.entries(chooseUsData).map(([key, value]) => (
+            <CardContainer
+              key={key}
+              cardImageUrl={value.imageUrl}
+              cardTitle={value.title}
+              cardDescription={value.description}
             />
           ))}
         </div>
