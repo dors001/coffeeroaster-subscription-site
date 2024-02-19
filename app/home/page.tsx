@@ -3,10 +3,14 @@ import Hero from "./components/Hero";
 import Product from "./components/Product";
 import data from "../database.json";
 import CardContainer from "./components/cardContainer";
+import SectionCard from "../components/sectionCard";
+import ButtonPrimary from "../components/btnPrimary";
+import BreakRow from "../components/breakRow";
 
 const HomePage = () => {
   const products = data.products;
   const chooseUsData = data.choose_us;
+  const howItWorksData = data.how_is_works;
 
   return (
     <>
@@ -46,6 +50,27 @@ const HomePage = () => {
               cardDescription={value.description}
             />
           ))}
+        </div>
+      </div>
+      <div className="section-container flex flex-col justify-center align-middle ml-6 mr-6 gap-6">
+        <div className="section-title">
+          <h4 className="heading text-secondary-color text-center">
+            How it works
+          </h4>
+        </div>
+        <BreakRow />
+        <div className="section-cards-container flex flex-col justify-center align-middle gap-14">
+          {Object.entries(howItWorksData).map(([key, value]) => (
+            <SectionCard
+              key={key}
+              sectionCardNumber={value.number}
+              sectionCardTitle={value.title}
+              sectionCardDescription={value.description}
+            />
+          ))}
+        </div>
+        <div className="section-button">
+          <ButtonPrimary title="Create your plan" />
         </div>
       </div>
     </>

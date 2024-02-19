@@ -147,7 +147,8 @@ h4 {
 }
 
 .collection-container {
-  margin-top: 100px;
+  margin-top: 124px;
+  margin-bottom: 124px;
 }
 
 .products-container {
@@ -214,6 +215,14 @@ h4 {
 }
 
 @media screen and (min-width: 1440px) {
+  .collection-title {
+    bottom: 64px;
+  }
+
+  .collection-container {
+    margin: 256px auto;  
+  }
+
   .products-container {
     flex-direction: row;
   }
@@ -230,7 +239,7 @@ h4 {
 
 @media screen and (min-width: 1920px) {
   .collection-title {
-      bottom: 140px;
+      top: 840px;
    }
 }
 
@@ -345,5 +354,90 @@ h4 {
   .cards-container {
     flex-direction: row;
     left: 320px;
+  }
+}
+
+.section-container {
+  margin-top: 720px;
+}
+
+.section-card-container {
+  text-align: center;
+}
+
+.section-card-body-text {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.section-button {
+  margin-top: 24px;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {  
+  .section-container {
+    margin-top: 512px;
+  }
+
+  .section-title {
+    align-self: self-start;
+  }
+
+  .break-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 73vw;
+    margin-left: 10px;
+  }
+  
+  .circle {
+    width: 31px;
+    height: 31px;
+    border: 2px solid var(--color-accent);
+    border-radius: 50%; 
+  }
+  
+  .line {
+    flex-grow: 1; 
+    height: 2px; 
+    background-color: var(--color-text-secondary); 
+  }
+
+  .section-cards-container {
+    flex-direction: row;
+  }
+
+  .section-card-container {
+    text-align: left;
+  }
+
+  .section-button {
+    align-self: self-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section-title {
+    padding-left: 40px;
+  }
+
+  .section-cards-container, .break-row {
+    margin: 24px 40px;
+  }
+
+  .break-row {
+    width: 70vw;
+  }
+
+  .section-button {
+    margin: 18px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-container {
+    margin-top: 420px;
   }
 }
