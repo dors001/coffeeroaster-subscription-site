@@ -473,3 +473,43 @@ h4 {
     padding-top: 7px;
   }
 }
+
+.about-banner-container {
+  background-image: url("/assets/about/mobile/image-hero-whitecup.jpg");
+  background-size: cover;
+  margin: auto 24px;
+  padding: 90px 24px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-banner-container {
+    background-image: url("/assets/about/tablet/image-hero-whitecup.jpg");
+    background-size: cover;
+  }
+
+  .about-banner-title, .about-banner-body {
+    text-align: left;
+  }
+
+  .banner-text-container {
+    width: 56vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-banner-container {
+    background-image: url("/assets/about/desktop/image-hero-whitecup.jpg");
+    background-size: cover;
+  } 
+
+  .banner-text-container {
+    margin: 137px 85px;
+    width: 32vw;
+  }
+
+  .about-banner-body {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
