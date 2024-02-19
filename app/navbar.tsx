@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link href="/home">
               <Image
                 alt="Logo"
-                src="/assets/shared/desktop/logo.svg"
+                src="/assets/shared/desktop/logo dark.svg"
                 width={235}
                 height={25}
                 layout="responsive"

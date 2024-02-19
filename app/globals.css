@@ -436,8 +436,40 @@ h4 {
   }
 }
 
+.footer-container {
+  margin-top: 124px;
+}
+
 @media screen and (min-width: 1440px) {
   .section-container {
     margin-top: 420px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding: 54px 225px;
+  }
+  .nav-menu {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 48px;
+    margin: 80px;
+  }
+
+  .socials-container {
+    margin-left: auto;
+  }
+
+  .footer-nav-menu {
+    padding-top: 7px;
   }
 }

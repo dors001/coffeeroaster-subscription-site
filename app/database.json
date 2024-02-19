@@ -56,5 +56,24 @@
             "title": "Receive and enjoy!",
             "description": "We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience."
         }
+    },
+    "assets":{
+        "socials": {
+            "meta": {                
+            "social_image": "/assets/shared/desktop/icon-facebook.svg",
+            "social_href": "https://www.meta.com",
+            "social_name": "meta"
+            },
+        "x": {                
+            "social_image": "/assets/shared/desktop/icon-twitter.svg",
+            "social_href": "https://www.x.com",
+            "social_name": "x"
+            },
+        "instagram": {                
+            "social_image": "/assets/shared/desktop/icon-instagram.svg",
+            "social_href": "https://www.instagram.com",
+            "social_name": "instagram"        
+            }    
+        }
     }
 }
