@@ -513,3 +513,56 @@ h4 {
     line-height: 26px;
   }
 }
+
+
+@media screen and (min-width: 768px) {
+  .commitment-section {
+    flex-direction: row;
+    justify-items: space-evenly;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .image-container {
+    background-image: url("/assets/about/tablet/image-commitment.jpg");
+    background-size: cover;
+    width: 281px;
+    height: 470px;
+    border-radius: 8px;
+  }
+
+  .commitment-body-container {
+    text-align: left;
+    width: 339px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .commitment-section {
+    justify-content: space-evenly;
+    margin: 125px 0;
+  }
+
+  .image-container {
+    background-image: url("/assets/about/desktop/image-commitment.jpg");
+    background-size: cover;
+    width: 445px;
+    height: 520px;
+    border-radius: 8px;
+  }
+
+  .commitment-body-container {
+    align-self: center;
+    width: 540px;
+  }
+
+  .commitment-body-container > h3 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .commitment-body-container > p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
