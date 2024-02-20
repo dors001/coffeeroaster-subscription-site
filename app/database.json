@@ -75,5 +75,31 @@
             "social_name": "instagram"        
             }    
         }
+    },
+    "headquarters": {
+        "uk": {
+            "country_image": "/assets/about/desktop/illustration-uk.svg",
+            "country_name": "United Kingdom",
+            "street_address":"68 Asfordby Rd",
+            "city": "Alcaston",
+            "area_code": "SY6 1YA",
+            "contact_number": "+44 1241 918425"
+        },
+        "canada": {
+            "country_image": "/assets/about/desktop/illustration-canada.svg",
+            "country_name": "Canada",
+            "street_address":"1528 Eglinton Avenue",
+            "city": "Toronto",
+            "area_code": "Ontario M4P 1A6",
+            "contact_number": "+1 416 485 2997"
+        },
+        "australia": {
+            "country_image": "/assets/about/desktop/illustration-australia.svg",
+            "country_name": "Australia",
+            "street_address":"36 Swanston Street",
+            "city": "Kewell",
+            "area_code": "Victoria",
+            "contact_number": "+61 4 9928 3629"
+        }
     }
 }
