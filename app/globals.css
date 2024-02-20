@@ -747,3 +747,43 @@ h4 {
     line-height: 72px;
   } 
  }
+
+ .plan-steps-container {
+  margin-top: 124px;
+ }
+
+ .plan-card-container {
+  text-align: center;
+  padding: 24px
+ }
+
+ @media screen and (min-width: 768px) {
+
+  .plan-steps-container {
+    padding-top: 80px;
+  }
+    
+  .plan-cards-container {
+    flex-direction: row;
+    height: 640px; 
+  }
+
+  .plan-card-container {
+    text-align: left;
+    padding: 18px
+   }
+
+ }
+
+ @media screen and (min-width: 1440px) {
+  .plan-steps-container {
+    border-radius: 8px;
+    margin-left: 24px;
+    margin-right: 24px;
+    height: 655px;
+  }
+  .plan-card-container {
+    text-align: left;
+    padding: 24px
+   }
+ }
