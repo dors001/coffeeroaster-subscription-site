@@ -462,7 +462,7 @@ h4 {
     justify-content: space-between;
     align-items: center;
     padding: 0 48px;
-    margin: 80px;
+    margin: 80px 24px;
   }
 
   .socials-container {
@@ -687,4 +687,63 @@ h4 {
   .headquarters-container {
     padding: 165px;
   }
+ }
+ 
+ .plan-banner-container {
+  background-image: url("/assets/plan/mobile/image-hero-blackcup.jpg");
+  background-size: cover;
+  margin: auto 24px;
+  height: 327px;
+  border-radius: 8px;
+ }
+
+ .banner-body-container {
+  margin: auto 24px;
+ }
+
+ @media screen and (min-width: 768px) {
+  
+ .plan-banner-container {
+  background-image: url("/assets/plan/tablet/image-hero-blackcup.jpg");
+  background-size: cover;
+  background-position: right;
+  height: 400px;
+ }
+
+  .banner-body-container {
+    text-align: left;
+    width: 50vw;
+    margin-left: 48px;
+  }
+
+  .banner-body-container > h2 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+ }
+
+ @media screen and (min-width: 1024px) {
+  .banner-body-container {
+    width: 45vw;
+    margin-left: 64px;
+  }
+ }
+
+ @media screen and (min-width: 1440px) {
+  .plan-banner-container {
+    background-image: url("/assets/plan/desktop/image-hero-blackcup.jpg");
+    background-size: cover;
+    height: 450px;
+   }
+
+   .banner-body-container {
+    width: 35vw;
+    margin-left: 72px;
+  }
+
+  .banner-body-container > h2 {
+    margin-bottom: 40px;
+    font-size: 72px;
+    line-height: 72px;
+  } 
  }
