@@ -22,8 +22,12 @@ const CommitmentSection = () => {
             />
           </div>
           <div className="commitment-body-container text-center">
-            <h3 className="heading text-primary-color mb-8">Our commitment</h3>
-            <p className="body-text text-primary-color">{commitmentText}</p>
+            <h3 className="heading text-primary-color mb-8 xl:text-left">
+              Our commitment
+            </h3>
+            <p className="body-text text-primary-color xl:text-left">
+              {commitmentText}
+            </p>
           </div>
         </div>
       </section>

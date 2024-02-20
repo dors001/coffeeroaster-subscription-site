@@ -566,3 +566,78 @@ h4 {
     line-height: 26px;
   }
 }
+
+.about-quality-story-container {
+  margin: 150px 24px;
+  height: 510px;
+  padding: auto 24px;
+  border-radius: 8px;
+}
+
+.about-quality-img-container {
+  border-radius: 8px;
+  left: 24px;
+  bottom: 440px;
+}
+
+.about-quality-body-container {
+  padding-top: 120px;
+}
+
+@media screen and (min-width: 425px) {
+  .about-quality-img-container {
+    left: 48px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .about-quality-story-container {
+    margin-top: 350px;
+  }
+
+  .about-quality-img-container {
+    background-image: url("/assets/about/tablet/image-quality.jpg");
+    background-size: cover;
+    width: 573px;
+    height: 320px;
+    bottom: 350px;
+    left: 75px;
+  }
+
+  .about-quality-body-container {
+    padding: 200px 74px 48px 74px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-quality-img-container {
+    left: 204px;
+   }
+ }
+
+ @media screen and (min-width: 1440px) {
+  .about-quality-img-container {
+    background-image: url("/assets/about/desktop/image-quality.jpg");
+    background-size: cover;
+    width: 445px;
+    height: 474px;
+    bottom: 150px;
+    left: 800px;
+  }
+
+  .about-quality-body-container {
+    padding: 150px 750px 176px 85px;
+  }
+
+ }
+
+ @media screen and (min-width: 1920px) {
+  .about-quality-img-container {
+    left: 1150px;
+  }
+
+  .about-quality-body-container {
+    padding: 150px 1000px 176px 85px;
+  }
+ }
