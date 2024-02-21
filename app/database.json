@@ -119,5 +119,93 @@
             "title": "Receive and enjoy!",
             "description": "We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience."
         }
+    },
+
+    "plan_choices": {
+        "how_drink_coffee": {
+            "options_title": "How do you drink your coffee?",
+            "options": {
+                "option_one":{
+                    "title": "Capsule",  
+                    "description": "Compatible with Nespresso systems and similar brewers"
+                  },
+                  "option_two": {
+                      "title": "Filter",
+                      "description": "For pour over or drip methods like Aeropress, Chemex, and V60"
+                  },
+                  "option_three": {
+                      "title": "Espresso",
+                      "description": "Dense and finely ground beans for an intense, flavorful experience"
+                  }
+            }
+        },
+        "type_coffee": {
+            "options_title": "What type of coffee?",
+            "options": {
+                "option_one":{
+                    "title": "Single Origin",  
+                    "description": "Distinct, high quality coffee from a specific family-owned farm"
+                  },
+                  "option_two": {
+                      "title": "Decaf",
+                      "description": "Just like regular coffee, except the caffeine has been removed"
+                  },
+                  "option_three": {
+                      "title": "Blended",
+                      "description": "Combination of two or three dark roasted beans of organic coffees"
+                  }
+            }
+        },
+        "quantity": {
+            "options_title": "How much would you like?",
+            "options": {
+                "option_one":{
+                    "title": "250g",  
+                    "description": "Perfect for the solo drinker. Yields about 12 delicious cups."
+                  },
+                  "option_two": {
+                      "title": "500g",
+                      "description": "Perfect option for a couple. Yields about 40 delectable cups."
+                  },
+                  "option_three": {
+                      "title": "1000g",
+                      "description": "Perfect for offices and events. Yields about 90 delightful cups."
+                  }
+            }
+        },
+        "grind": {
+            "options_title": "Want us to grind them?",
+            "options": {
+                "option_one":{
+                    "title": "Wholebean",  
+                    "description": "Best choice if you cherish the full sensory experience"
+                  },
+                  "option_two": {
+                      "title": "Filter",
+                      "description": "For drip or pour-over coffee methods such as V60 or Aeropress"
+                  },
+                  "option_three": {
+                      "title": "Cafetiére",
+                      "description": "Course ground beans specially suited for french press coffee"
+                  }
+            }
+        },
+        "delivery": {
+            "options_title": "How often should we deliver?",
+            "options": {
+                "option_one":{
+                    "title": "Every week",  
+                    "description": "$7.20 per shipment. Includes free first-class shipping."
+                  },
+                  "option_two": {
+                      "title": "Every 2 weeks",
+                      "description": "$9.60 per shipment. Includes free priority shipping."
+                  },
+                  "option_three": {
+                      "title": "Every month",
+                      "description": "$12.00 per shipment. Includes free priority shipping."
+                  }
+            }
+        }
     }
 }

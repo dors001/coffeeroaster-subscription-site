@@ -7,7 +7,7 @@ interface Props {
 const HeadquartersSection = ({ children }: Props) => {
   return (
     <>
-      <section className="headquarters-container flex flex-col m-6 gap-10">
+      <section className="headquarters-container flex flex-col m-6 mt-60 mb-60 gap-10">
         <div className="headquarters-title text-center">
           <h4 className="heading text-secondary-color">Our headquesrters</h4>
         </div>

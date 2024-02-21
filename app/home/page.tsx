@@ -52,7 +52,7 @@ const HomePage = () => {
           ))}
         </div>
       </div>
-      <div className="section-container flex flex-col justify-center align-middle ml-6 mr-6 gap-6">
+      <div className="section-container flex flex-col justify-center align-middle ml-6 mr-6 mb-80 gap-6">
         <div className="section-title">
           <h4 className="heading text-secondary-color text-center">
             How it works

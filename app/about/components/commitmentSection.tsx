@@ -10,7 +10,7 @@ const CommitmentSection = () => {
 
   return (
     <>
-      <section>
+      <section className="mt-80 mb-80">
         <div className="commitment-section flex flex-col m-6 mt-24 gap-12">
           <div className="image-container justify-self-center">
             <Image
