@@ -1,19 +1,24 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 
 interface Props {
   optionTitle: string;
   optionDescription: string;
+  isActiveChoice: boolean;
+  onClick: () => void;
 }
 
-const ChoiceCard = ({ optionTitle, optionDescription }: Props) => {
-  const [isActive, setIsActive] = useState(false);
-
+const ChoiceCard = ({
+  optionTitle,
+  optionDescription,
+  isActiveChoice,
+  onClick,
+}: Props) => {
   return (
     <>
       <div
-        className={`option-container ${isActive ? "active" : ""}`}
-        onClick={() => setIsActive(!isActive)}
+        className={`option-container ${isActiveChoice ? "active" : ""}`}
+        onClick={onClick}
       >
         <h4 className="heading text-primary-color">{optionTitle}</h4>
         <p className="body-text text-primary-color">{optionDescription}</p>

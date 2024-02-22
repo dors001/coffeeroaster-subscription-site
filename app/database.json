@@ -126,14 +126,17 @@
             "options_title": "How do you drink your coffee?",
             "options": {
                 "option_one":{
+                    "category": "preferences",
                     "title": "Capsule",  
                     "description": "Compatible with Nespresso systems and similar brewers"
                   },
                   "option_two": {
+                    "category": "preferences",
                       "title": "Filter",
                       "description": "For pour over or drip methods like Aeropress, Chemex, and V60"
                   },
                   "option_three": {
+                    "category": "preferences",
                       "title": "Espresso",
                       "description": "Dense and finely ground beans for an intense, flavorful experience"
                   }
@@ -143,14 +146,19 @@
             "options_title": "What type of coffee?",
             "options": {
                 "option_one":{
+                    "category": "beanType",
                     "title": "Single Origin",  
                     "description": "Distinct, high quality coffee from a specific family-owned farm"
                   },
                   "option_two": {
+                    "category": "beanType",
+
                       "title": "Decaf",
                       "description": "Just like regular coffee, except the caffeine has been removed"
                   },
                   "option_three": {
+                    "category": "beanType",
+
                       "title": "Blended",
                       "description": "Combination of two or three dark roasted beans of organic coffees"
                   }
@@ -160,14 +168,20 @@
             "options_title": "How much would you like?",
             "options": {
                 "option_one":{
+                    "category": "quantity",
+
                     "title": "250g",  
                     "description": "Perfect for the solo drinker. Yields about 12 delicious cups."
                   },
                   "option_two": {
+                    "category": "quantity",
+
                       "title": "500g",
                       "description": "Perfect option for a couple. Yields about 40 delectable cups."
                   },
                   "option_three": {
+                    "category": "quantity",
+
                       "title": "1000g",
                       "description": "Perfect for offices and events. Yields about 90 delightful cups."
                   }
@@ -177,14 +191,20 @@
             "options_title": "Want us to grind them?",
             "options": {
                 "option_one":{
+                    "category": "grindOption",
+
                     "title": "Wholebean",  
                     "description": "Best choice if you cherish the full sensory experience"
                   },
                   "option_two": {
+                    "category": "grindOption",
+
                       "title": "Filter",
                       "description": "For drip or pour-over coffee methods such as V60 or Aeropress"
                   },
                   "option_three": {
+                    "category": "grindOption",
+
                       "title": "Cafetiére",
                       "description": "Course ground beans specially suited for french press coffee"
                   }
@@ -194,14 +214,20 @@
             "options_title": "How often should we deliver?",
             "options": {
                 "option_one":{
+                    "category": "deliveryOption",
+
                     "title": "Every week",  
                     "description": "$7.20 per shipment. Includes free first-class shipping."
                   },
                   "option_two": {
+                    "category": "deliveryOption",
+
                       "title": "Every 2 weeks",
                       "description": "$9.60 per shipment. Includes free priority shipping."
                   },
                   "option_three": {
+                    "category": "deliveryOption",
+
                       "title": "Every month",
                       "description": "$12.00 per shipment. Includes free priority shipping."
                   }

@@ -912,3 +912,7 @@ h4 {
     color: var(--color-primary);
   }
  }
+ 
+ .plan-summary-button-container {
+  margin: auto 18%;
+ }
