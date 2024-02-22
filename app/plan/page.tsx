@@ -150,9 +150,9 @@ const PlanPage = () => {
                 )}
               </div>
             ))}
+        <PlanSummary summarySentence={summarySentence} />
           </div>
         </div>
-        <PlanSummary summarySentence={summarySentence} />
       </section>
     </>
   );

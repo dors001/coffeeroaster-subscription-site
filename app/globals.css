@@ -914,5 +914,16 @@ h4 {
  }
  
  .plan-summary-button-container {
-  margin: auto 18%;
+   align-self: center;
+ }
+
+ .summary-container {
+  gap: 40px;
+ }
+
+ @media screen and (min-width: 1440px) {
+  .order-summary-container {
+    margin: 0;
+    margin-top: 40px;
+  }
  }

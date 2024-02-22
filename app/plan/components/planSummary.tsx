@@ -8,7 +8,7 @@ interface Props {
 const PlanSummary = ({ summarySentence }: Props) => {
   return (
     <>
-      <section className="summary-order-container">
+      <section className="summary-container flex flex-col">
         <div className="order-summary-container bg-primary-color m-6 rounded-lg p-6">
           <span className="body-text text-secondary-color">ORDER SUMMARY</span>
           <h4 className="heading text-primary-text-color">{summarySentence}</h4>
