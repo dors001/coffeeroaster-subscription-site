@@ -6,6 +6,7 @@ import CardContainer from "./components/cardContainer";
 import SectionCard from "../components/sectionCard";
 import ButtonPrimary from "../components/btnPrimary";
 import BreakRow from "../components/breakRow";
+import { useRouter } from "next/router";
 
 const HomePage = () => {
   const products = data.products;
@@ -70,7 +71,7 @@ const HomePage = () => {
           ))}
         </div>
         <div className="section-button">
-          <ButtonPrimary title="Create your plan" />
+          <ButtonPrimary title="Create your plan" href={"/plan"} />
         </div>
       </div>
     </>
