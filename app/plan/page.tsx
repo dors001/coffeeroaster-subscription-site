@@ -7,10 +7,13 @@ import SectionCard from "./components/sectionCard";
 import CollapsibleTitle from "./components/collapsibleTitle";
 import OptionsContainer from "./components/optionsContainer";
 import ChoiceCard from "./components/choiceCard";
+import SideMenu from "./components/sideMenu";
+import SideMenuItem from "./components/sideMenuItem";
 
 const PlanPage = () => {
   const planStepsData = data.plan_steps;
   const planChoicesData = data.plan_choices;
+  const sideMenuChoicesData = data.side_menu;
 
   const [openSections, setOpenSections] = useState<{ [key: string]: boolean }>(
     {}
@@ -21,6 +24,10 @@ const PlanPage = () => {
       ...prev,
       [sectionKey]: !prev[sectionKey],
     }));
+  };
+
+  const handleMenuItemClick = (sectionKey: string) => {
+    toggleMenu(sectionKey);
   };
 
   return (
@@ -36,29 +43,44 @@ const PlanPage = () => {
           />
         ))}
       </PlanSteps>
-      <section className="plan-choice-section-container flex flex-col gap-28 mt-60 mb-60 ml-6 mr-6">
-        {Object.entries(planChoicesData).map(([key, planChoice]) => (
-          <div key={key} className="choice-option-container">
-            <CollapsibleTitle
-              optionTitle={planChoice.options_title}
-              isCollapsibleOpen={openSections[key]}
-              toggleCollapsible={() => toggleMenu(key)}
-            />
-            {openSections[key] && (
-              <OptionsContainer>
-                {Object.entries(planChoice.options).map(
-                  ([optionKey, optionValue]) => (
-                    <ChoiceCard
-                      key={optionKey}
-                      optionTitle={optionValue.title}
-                      optionDescription={optionValue.description}
-                    />
-                  )
+      <section className="plan-choice-section-container flex flex-col gap-28 ml-6 mr-6">
+        <div className="plan-options-container flex">
+          <SideMenu>
+            {Object.entries(sideMenuChoicesData).map(([key, planChoice]) => (
+              <SideMenuItem
+                key={key}
+                number={planChoice.number}
+                title={planChoice.title}
+                isMenuItemClicked={openSections[key] ?? false}
+                handleMenuItemClick={() => handleMenuItemClick(key)}
+              />
+            ))}
+          </SideMenu>
+          <div className="choices-container flex flex-col">
+            {Object.entries(planChoicesData).map(([key, planChoice]) => (
+              <div key={key} className="choice-option-container">
+                <CollapsibleTitle
+                  optionTitle={planChoice.options_title}
+                  isCollapsibleOpen={openSections[key]}
+                  toggleCollapsible={() => toggleMenu(key)}
+                />
+                {openSections[key] && (
+                  <OptionsContainer>
+                    {Object.entries(planChoice.options).map(
+                      ([optionKey, optionValue]) => (
+                        <ChoiceCard
+                          key={optionKey}
+                          optionTitle={optionValue.title}
+                          optionDescription={optionValue.description}
+                        />
+                      )
+                    )}
+                  </OptionsContainer>
                 )}
-              </OptionsContainer>
-            )}
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </section>
     </>
   );

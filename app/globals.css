@@ -749,7 +749,7 @@ h4 {
  }
 
  .plan-steps-container {
-  margin: 240px auto;
+  margin: 200px auto;
  }
 
  .plan-card-container {
@@ -788,6 +788,10 @@ h4 {
    }
  }
 
+ .plan-choice-section-container {
+  margin-bottom: 120px;
+ }
+
  .option-container {
   border-radius: 8px;
   background-color: #f4f1eb;
@@ -811,6 +815,14 @@ h4 {
   color: var(--color-text);
  }
 
+ .side-menu-text {
+  display: none;
+ }
+
+ .choices-container {
+  gap: 48px;
+ } 
+
  @media screen and (min-width: 768px) {
   .options-container {
     flex-direction: row;
@@ -819,5 +831,84 @@ h4 {
 
   .option-container > h4 {
     margin: 24px auto;
+  }
+
+  .choices-container {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .choice-option-title {
+    justify-content: space-between;
+  }
+
+  .choice-option-title > h4 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+ }
+
+ @media screen and (min-width: 1440px) {
+  .choices-container {
+    margin: 165px 85px;
+    justify-content: space-around;
+  }
+
+  .side-menu-container {
+    color: var(--color-secondary);
+  }
+
+  .side-menu-underline {
+    border-bottom: 1px solid #83888f;
+  }
+  
+  .plan-options-container {
+    width: 100%;
+  }
+
+  .side-menu-container {
+    gap: 24px;
+    margin: 0 125px;
+  }
+
+  .choices-container {
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .choice-option-title > h4 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .choices-container {
+    width: 60%;
+    gap: 48px;
+  }
+
+  .side-menu-text {
+    display: block;
+    margin: 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888f8b;
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+  }
+
+  .side-menu-text:hover:nth-child(1) {
+    color: #0e87859e;
+  }
+
+  .side-menu-text:hover:nth-child(2) {
+    color: var(--color-secondary);
+  }
+  
+    .preference-active:nth-child(1) {
+      color: var(--color-accent)
+    }
+
+  .preference-active:nth-child(2) {
+    color: var(--color-primary);
   }
  }

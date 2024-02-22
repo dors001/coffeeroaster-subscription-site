@@ -122,7 +122,7 @@
     },
 
     "plan_choices": {
-        "how_drink_coffee": {
+        "prefrences": {
             "options_title": "How do you drink your coffee?",
             "options": {
                 "option_one":{
@@ -139,7 +139,7 @@
                   }
             }
         },
-        "type_coffee": {
+        "bean_type": {
             "options_title": "What type of coffee?",
             "options": {
                 "option_one":{
@@ -173,7 +173,7 @@
                   }
             }
         },
-        "grind": {
+        "grind_option": {
             "options_title": "Want us to grind them?",
             "options": {
                 "option_one":{
@@ -190,7 +190,7 @@
                   }
             }
         },
-        "delivery": {
+        "deliveries": {
             "options_title": "How often should we deliver?",
             "options": {
                 "option_one":{
@@ -206,6 +206,29 @@
                       "description": "$12.00 per shipment. Includes free priority shipping."
                   }
             }
+        }                
+    },
+
+    "side_menu": {
+        "prefrences": {
+            "number": "01",
+            "title": "Prefrences"
+        },
+        "bean_type": {
+            "number": "02",
+            "title": "Bean Type"
+        },
+        "quantity": {
+            "number": "03",
+            "title": "Quantity"
+        },
+        "grind_option": {
+            "number": "04",
+            "title": "Grind Option"
+        },
+        "deliveries": {
+            "number": "05",
+            "title": "Deliveries"
         }
-    }
+}
 }
