@@ -10,11 +10,7 @@ This is a solution to the [Coffeeroasters subscription site challenge on Fronten
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -41,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Github Repo](https://github.com/dors001/coffeeroaster-subscription-site)
 - Live Site URL: [Coffee Roaster Live Site](https://coffeeroaster-subscription-site.vercel.app/)
 
 ## My process
