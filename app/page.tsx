@@ -3,10 +3,14 @@ import Hero from "./home/components/Hero";
 import Product from "./home/components/Product";
 import data from "../app/database.json";
 import CardContainer from "./home/components/cardContainer";
+import BreakRow from "./components/breakRow";
+import SectionCard from "./components/sectionCard";
+import Link from "next/link";
 
 const HomePage = () => {
   const products = data.products;
   const chooseUsData = data.choose_us;
+  const howItWorksData = data.how_is_works;
 
   return (
     <>
@@ -27,7 +31,6 @@ const HomePage = () => {
           ))}
         </div>
       </div>
-
       <div className="choose-us-section gap-16 relative">
         <div className="choose-us-body-text-container">
           <h3 className="heading mt-16 mb-6">Why choose us?</h3>
@@ -47,6 +50,31 @@ const HomePage = () => {
               cardDescription={value.description}
             />
           ))}
+        </div>
+      </div>
+      <div className="section-container flex flex-col justify-center align-middle ml-6 mr-6 mb-80 gap-6">
+        <div className="section-title">
+          <h4 className="heading text-secondary-color text-center">
+            How it works
+          </h4>
+        </div>
+        <BreakRow />
+        <div className="section-cards-container flex flex-col justify-center align-middle gap-14">
+          {Object.entries(howItWorksData).map(([key, value]) => (
+            <SectionCard
+              key={key}
+              sectionCardNumber={value.number}
+              sectionCardTitle={value.title}
+              sectionCardDescription={value.description}
+            />
+          ))}
+        </div>
+        <div className="section-button">
+          <Link href="/plan">
+            <button className="btn-primary heading self-center">
+              Create your plan
+            </button>
+          </Link>
         </div>
       </div>
     </>
