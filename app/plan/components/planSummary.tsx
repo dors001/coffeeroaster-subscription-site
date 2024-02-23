@@ -3,9 +3,10 @@ import ButtonPrimary from "@/app/components/btnPrimary";
 
 interface Props {
   summarySentence: ReactElement;
+  onButtonClick: () => void;
 }
 
-const PlanSummary = ({ summarySentence }: Props) => {
+const PlanSummary = ({ summarySentence, onButtonClick }: Props) => {
   return (
     <>
       <section className="summary-container flex flex-col">
@@ -14,7 +15,11 @@ const PlanSummary = ({ summarySentence }: Props) => {
           <h4 className="heading text-primary-text-color">{summarySentence}</h4>
         </div>
         <div className="plan-summary-button-container m-6">
-          <ButtonPrimary title="Create your plan" href="/plan" />
+          <ButtonPrimary
+            title="Create your plan"
+            href=""
+            onClick={onButtonClick}
+          />
         </div>
       </section>
     </>

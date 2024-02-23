@@ -1,12 +1,12 @@
+"use client";
 import React from "react";
 import Hero from "./components/Hero";
 import Product from "./components/Product";
 import data from "../database.json";
 import CardContainer from "./components/cardContainer";
 import SectionCard from "../components/sectionCard";
-import ButtonPrimary from "../components/btnPrimary";
 import BreakRow from "../components/breakRow";
-import { useRouter } from "next/router";
+import Link from "next/link";
 
 const HomePage = () => {
   const products = data.products;
@@ -71,7 +71,11 @@ const HomePage = () => {
           ))}
         </div>
         <div className="section-button">
-          <ButtonPrimary title="Create your plan" href={"/plan"} />
+          <Link href="/plan">
+            <button className="btn-primary heading self-center">
+              Create your plan
+            </button>
+          </Link>
         </div>
       </div>
     </>

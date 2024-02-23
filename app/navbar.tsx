@@ -10,10 +10,14 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       <div className="relative" role="navigation">
-        <div className="flex justify-between my-10 mx-6 md:mx-10">
+        <div className="flex justify-between my-4 mx-6 md:mx-10">
           <div>
             <Link href="/home">
               <Image
@@ -28,7 +32,7 @@ const Navbar = () => {
           <MenuDesktop />
           <HamburgerIconLogic isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
         </div>
-        <MenuMobile isMenuOpen={isMenuOpen} />
+        <MenuMobile isMenuOpen={isMenuOpen} handleLinkClick={handleLinkClick} />
       </div>
     </>
   );

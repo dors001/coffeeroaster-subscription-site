@@ -11,6 +11,7 @@ import SideMenu from "./components/sideMenu";
 import SideMenuItem from "./components/sideMenuItem";
 import ButtonPrimary from "../components/btnPrimary";
 import PlanSummary from "./components/planSummary";
+import SummaryPopup from "./components/summaryPopup";
 
 interface ActiveChoices {
   [key: string]: string;
@@ -91,6 +92,10 @@ const PlanPage = () => {
     </div>
   );
 
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const handleShowPopup = () => setIsPopupVisible(true);
+  const handleClosePopup = () => setIsPopupVisible(false);
+
   return (
     <>
       <Banner />
@@ -150,7 +155,16 @@ const PlanPage = () => {
                 )}
               </div>
             ))}
-        <PlanSummary summarySentence={summarySentence} />
+            <PlanSummary
+              summarySentence={summarySentence}
+              onButtonClick={handleShowPopup}
+            />
+            {isPopupVisible && (
+              <SummaryPopup
+                summary={summarySentence}
+                onClose={handleClosePopup}
+              />
+            )}
           </div>
         </div>
       </section>

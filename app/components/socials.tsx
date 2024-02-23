@@ -13,7 +13,13 @@ const Socials = ({ socialHref, socialIcon, socialName }: Props) => {
     <>
       <div className="social-container self-center">
         <Link href={socialHref}>
-          <Image src={socialIcon} alt={socialName} width={24} height={24} />
+          <Image
+            src={socialIcon}
+            alt={socialName}
+            width={24}
+            height={24}
+            className="social-icon"
+          />
         </Link>
       </div>
     </>
